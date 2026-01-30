@@ -1,0 +1,1 @@
+This directory is for raw and processed datasets used in the project. Do NOT commit large data files to the repository. Use this README to describe dataset sources, ingestion notes, and file structure.
