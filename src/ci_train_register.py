@@ -18,9 +18,15 @@ def main():
     # ----------------------------
     # Pull config from env (set by GitHub Actions secrets)
     # ----------------------------
-    hf_token = os.environ.get("HF_TOKEN")
-    hf_dataset_id = os.environ.get("HF_DATASET_ID")
-    hf_model_id = os.environ.get("HF_MODEL_ID")
+    # hf_token = os.environ.get("HF_TOKEN")
+    # hf_dataset_id = os.environ.get("HF_DATASET_ID")
+    # hf_model_id = os.environ.get("HF_MODEL_ID")
+
+    hf_dataset_id = (os.environ.get("HF_DATASET_ID") or "").strip()
+    hf_model_id = (os.environ.get("HF_MODEL_ID") or "").strip()
+    hf_token = (os.environ.get("HF_TOKEN") or "").strip()
+
+
 
     if not hf_token:
         raise ValueError("HF_TOKEN is missing")
