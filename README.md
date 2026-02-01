@@ -40,10 +40,15 @@ The project follows a complete MLOps lifecycle:
 ## 📁 Repository Structure
 
 ├── app/ # Streamlit app, Dockerfile, deployment scripts
+
 ├── src/ # Training and CI scripts
+
 ├── reports/ # Experiment logs and evaluation metrics
+
 ├── .github/workflows/ # GitHub Actions CI/CD pipeline
+
 ├── requirements-train.txt # Training dependencies
+
 └── README.md
 
 
@@ -62,3 +67,4 @@ The repository includes a **GitHub Actions workflow** that:
 ## 📌 Notes
 
 This repository is intended for academic and demonstration purposes as part of an **Advanced Machine Learning and MLOps project**.
+
